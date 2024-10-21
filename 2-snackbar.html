@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/styles-DvPDDfy5.css">
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/back-link-lRiqyQVt.css">
+    <script type="module" crossorigin src="/goit-advancedjs-hw-02/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/back-link-6ISojNvA.js">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/back-link-CN7SNVvX.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/2-snackbar-Bb4NSY-w.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/styles-BvpbPF1T.css">
   </head>
   <body>
-    
+
 
     <main>
       <div class="container">
@@ -18,6 +23,26 @@
         </h1>
         <a class="back-link" href="./index.html">Go back</a>
       </div>
+      <form class="form">
+        <label>
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
     </main>
 
   </body>

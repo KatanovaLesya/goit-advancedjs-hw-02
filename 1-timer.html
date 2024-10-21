@@ -7,8 +7,13 @@
     <title>Timer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/styles-DvPDDfy5.css">
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/back-link-lRiqyQVt.css">
+    <script type="module" crossorigin src="/goit-advancedjs-hw-02/1-timer.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/back-link-6ISojNvA.js">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/back-link-CN7SNVvX.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/1-timer-C3YJvQQJ.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/styles-BvpbPF1T.css">
   </head>
   <body>
     <main>
@@ -21,6 +26,28 @@
         <a class="back-link" href="./index.html">Go back</a>
 
       </div>
+      <input type="text" id="datetime-picker" />
+      <button type="button" data-start>Start</button>
+
+      <div class="timer">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
+
     </main>
 
   </body>
